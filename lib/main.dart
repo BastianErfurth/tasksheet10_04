@@ -16,10 +16,10 @@ class MainApp extends StatelessWidget {
             child: Padding(
               padding: const EdgeInsets.all(16.0),
               child: Column(
-                spacing: 8,
+                spacing: 4,
                 children: [
                   Expanded(
-                    flex: 2,
+                    flex: 3,
                     child: Container(
                       color: Colors.amber,
                       child: Center(
@@ -40,21 +40,23 @@ class MainApp extends StatelessWidget {
                   Expanded(
                     flex: 1,
                     child: Padding(
-                      padding: const EdgeInsets.all(16.0),
-                      child: Container(
-                        child: Center(
-                          child: Column(
-                            children: [
-                              Container(
-                                color: Colors.cyan,
-                                child: Center(
-                                  child: Text(
-                                    "Heute haben wir wieder neu Widgets kennengelernt. z.B Expanded Widget, um den verfügbaren Space zu füllen. Oder auch Flexible Widget, das in der Grüße flexibel ist.",
+                      padding: const EdgeInsets.all(8.0),
+                      child: Center(
+                        child: Column(
+                          children: [
+                            Container(
+                              color: Colors.cyan,
+                              child: Center(
+                                child: Text(
+                                  "Heute haben wir wieder neu Widgets kennengelernt. z.B Expanded Widget, um den verfügbaren Space zu füllen. Oder auch Flexible Widget, das in der Grüße flexibel ist.",
+                                  style: TextStyle(
+                                    fontSize: 16,
+                                    fontWeight: FontWeight.w700,
                                   ),
                                 ),
                               ),
-                            ],
-                          ),
+                            ),
+                          ],
                         ),
                       ),
                     ),
