@@ -19,9 +19,9 @@ class MainApp extends StatelessWidget {
                 spacing: 4,
                 children: [
                   Expanded(
-                    flex: 3,
+                    flex: 1,
                     child: Container(
-                      color: Colors.amber,
+                      //color: Colors.amber,
                       child: Center(
                         child: Text(
                           "Willkommen zur App",
@@ -34,8 +34,8 @@ class MainApp extends StatelessWidget {
                     ),
                   ),
                   Expanded(
-                    flex: 1,
-                    child: Image.network("https://picsum.photos/200"),
+                    flex: 3,
+                    child: Image.network("https://picsum.photos/400/500"),
                   ),
                   Expanded(
                     flex: 1,
@@ -45,7 +45,7 @@ class MainApp extends StatelessWidget {
                         child: Column(
                           children: [
                             Container(
-                              color: Colors.cyan,
+                              //color: Colors.cyan,
                               child: Center(
                                 child: Text(
                                   "Heute haben wir wieder neu Widgets kennengelernt. z.B Expanded Widget, um den verfügbaren Space zu füllen. Oder auch Flexible Widget, das in der Grüße flexibel ist.",
