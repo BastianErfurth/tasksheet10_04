@@ -9,10 +9,60 @@ class MainApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
+    return MaterialApp(
       home: Scaffold(
         body: Center(
-          child: Text('Hello World!'),
+          child: SafeArea(
+            child: Padding(
+              padding: const EdgeInsets.all(16.0),
+              child: Column(
+                spacing: 8,
+                children: [
+                  Expanded(
+                    flex: 2,
+                    child: Container(
+                      color: Colors.amber,
+                      child: Center(
+                        child: Text(
+                          "Willkommen zur App",
+                          style: TextStyle(
+                            fontSize: 24,
+                            fontWeight: FontWeight.bold,
+                          ),
+                        ),
+                      ),
+                    ),
+                  ),
+                  Expanded(
+                    flex: 1,
+                    child: Image.network("https://picsum.photos/200"),
+                  ),
+                  Expanded(
+                    flex: 1,
+                    child: Padding(
+                      padding: const EdgeInsets.all(16.0),
+                      child: Container(
+                        child: Center(
+                          child: Column(
+                            children: [
+                              Container(
+                                color: Colors.cyan,
+                                child: Center(
+                                  child: Text(
+                                    "Heute haben wir wieder neu Widgets kennengelernt. z.B Expanded Widget, um den verfügbaren Space zu füllen. Oder auch Flexible Widget, das in der Grüße flexibel ist.",
+                                  ),
+                                ),
+                              ),
+                            ],
+                          ),
+                        ),
+                      ),
+                    ),
+                  ),
+                ],
+              ),
+            ),
+          ),
         ),
       ),
     );
